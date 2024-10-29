@@ -1,0 +1,12 @@
+.comparatorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.leftSide,
+.rightSide {
+    display: flex;
+    flex-direction: column;
+}
