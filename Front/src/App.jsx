@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import CharacList from './Views/CharacsList'
+import CharacInfos from './Views/CharacInfos'
+import CharacComparator from './Views/CharacComparator'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<CharacList />} />
+          <Route path="/characInfos" element={<CharacInfos />} />
+          <Route path="/characComparator" element={<CharacComparator />} />
 
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
