@@ -7,17 +7,15 @@ import CharacComparator from './Views/CharacComparator'
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<CharacList />} />
-          <Route path="/characInfos" element={<CharacInfos />} />
-          <Route path="/characComparator" element={<CharacComparator />} />
 
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<CharacList />} />
+        <Route path="/characInfos" element={<CharacInfos />} />
+        <Route path="/characComparator" element={<CharacComparator />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
